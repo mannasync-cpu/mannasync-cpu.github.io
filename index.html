@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godswill Olemgbe, MBBS — Clinical Research Coordinator & HealthTech Founder</title>
+    <meta name="description" content="Medical professional (MBBS) with clinical research coordination experience in Phase II/III neurology trials. Founder & CEO of MannaSync Solutions. Based in Dayton, Ohio.">
+    <meta name="keywords" content="Godswill Olemgbe, MBBS, Clinical Research Coordinator, neurology, psychometric rater, MannaSync, healthtech, Dayton Ohio">
+    <meta name="author" content="Godswill Olemgbe">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Godswill Olemgbe, MBBS — Clinical Research Coordinator & HealthTech Founder">
+    <meta property="og:description" content="Medical professional with Phase II/III neurology trial experience. Founder of MannaSync Solutions. Dayton, Ohio.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary: #1a365d;
+            --accent: #2c5282;
+            --light: #ebf4ff;
+            --gray: #4a5568;
+            --light-gray: #e2e8f0;
+            --white: #ffffff;
+            --gold: #b794f4;
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--gray);
+            line-height: 1.6;
+            background: var(--white);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: var(--white);
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero .title {
+            font-size: 1.1rem;
+            font-weight: 400;
+            opacity: 0.85;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero .tagline {
+            font-size: 1rem;
+            opacity: 0.75;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: var(--white);
+            color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background: var(--light);
+            transform: translateY(-1px);
+        }
+        
+        .btn-outline {
+            border: 1.5px solid rgba(255,255,255,0.4);
+            color: var(--white);
+        }
+        
+        .btn-outline:hover {
+            border-color: var(--white);
+            background: rgba(255,255,255,0.1);
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            padding: 3rem 0;
+        }
+        
+        section h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-gray);
+        }
+        
+        /* About */
+        .about-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        
+        /* Experience */
+        .job {
+            margin-bottom: 2rem;
+        }
+        
+        .job:last-child { margin-bottom: 0; }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .job-company {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--accent);
+        }
+        
+        .job-dates {
+            font-size: 0.85rem;
+            color: var(--gray);
+            font-style: italic;
+        }
+        
+        .job-location {
+            font-size: 0.8rem;
+            color: #a0aec0;
+        }
+        
+        .job ul {
+            margin-top: 0.75rem;
+            padding-left: 1.25rem;
+        }
+        
+        .job li {
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .skill-card {
+            background: var(--light);
+            padding: 1.25rem;
+            border-radius: 8px;
+        }
+        
+        .skill-card h3 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .skill-card p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* Certifications */
+        .cert-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .cert-badge {
+            background: var(--light);
+            color: var(--primary);
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        /* Publications */
+        .pub-list { list-style: none; }
+        .pub-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--light-gray);
+            font-size: 0.95rem;
+        }
+        .pub-list li:last-child { border-bottom: none; }
+        
+        /* Education */
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .edu-degree {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1rem;
+        }
+        
+        .edu-school {
+            font-size: 0.9rem;
+            color: var(--accent);
+        }
+        
+        .edu-year {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+        
+        /* Contact */
+        .contact-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            border: 1.5px solid var(--light-gray);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--gray);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        .contact-link:hover {
+            border-color: var(--accent);
+            color: var(--primary);
+            background: var(--light);
+        }
+        
+        .contact-link svg {
+            width: 18px;
+            height: 18px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+        
+        footer a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero .title { font-size: 1rem; }
+            .container { padding: 0 1rem; }
+            section { padding: 2rem 0; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .job-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<header class="hero">
+    <div class="hero-content">
+        <h1>Godswill Olemgbe, MBBS</h1>
+        <p class="title">Clinical Research Coordinator &bull; HealthTech Founder</p>
+        <p class="tagline">Medical professional with Phase II/III neurology trial experience. Founder & CEO of MannaSync Solutions. Based in Dayton, Ohio.</p>
+        <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#experience" class="btn btn-outline">View Experience</a>
+        </div>
+    </div>
+</header>
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <h2>About</h2>
+        <p class="about-text">
+            I am a medical professional (MBBS) with clinical research coordination experience in Phase II/III neurology trials, specializing in cognitive neurology assessments. I have administered and scored standardized psychometric assessments including ADAS-COG, mRS, MoCA, EQ-5D-5L, ADCS-ADL, and ADCS-CGIC across 10 neurology studies covering Alzheimer's Disease, Parkinson's Disease, Multiple Sclerosis, and Stroke.
+            <br><br>
+            I am also the Founder & CEO of MannaSync Solutions Inc., a health-technology company building AI-powered platforms for healthcare delivery. I am currently seeking clinical research opportunities while preparing for US medical residency.
+        </p>
+    </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+    <div class="container">
+        <h2>Professional Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Clinical Research Coordinator</div>
+                    <div class="job-company">Neurology Diagnostics Inc.</div>
+                    <div class="job-location">Ohio, USA</div>
+                </div>
+                <div class="job-dates">April 2024 &ndash; April 2025</div>
+            </div>
+            <ul>
+                <li>Achieved 400%+ increase in patient recruitment for challenging neurological trials through optimized screening protocols</li>
+                <li>Managed end-to-end Phase II/III trial execution for 10 studies: Alzheimer's, Parkinson's, MS, Stroke, neuropathic pain</li>
+                <li>Served as psychometric rater: ADAS-COG, mRS, MoCA, EQ-5D-5L, ADCS-ADL, ADCS-CGIC</li>
+                <li>Completed site audits and monitoring visits with zero significant findings</li>
+                <li>Managed biospecimen handling (IATA certified), phlebotomy, GCP/FDA regulatory compliance</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Founder & CEO</div>
+                    <div class="job-company">MannaSync Solutions Inc.</div>
+                    <div class="job-location">Dayton, OH</div>
+                </div>
+                <div class="job-dates">April 2023 &ndash; Present</div>
+            </div>
+            <ul>
+                <li>Founded and lead a health-technology company building AI-powered platforms for healthcare delivery</li>
+                <li>Led product strategy for telemedicine (Docarion) and FemTech (Ovuloom) platforms</li>
+                <li>Built strategic partnerships with healthcare providers and technology vendors</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Research Team Lead</div>
+                    <div class="job-company">Surgery Interest Group of Africa</div>
+                    <div class="job-location">Remote</div>
+                </div>
+                <div class="job-dates">August 2023 &ndash; February 2024</div>
+            </div>
+            <ul>
+                <li>Managed 250+ remote researchers across multi-site clinical studies with GCP compliance</li>
+                <li>Developed protocols, ICFs, and CRFs for IRB/Ethics Committee submissions</li>
+                <li>Conducted remote site visits and audits</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">House Officer</div>
+                    <div class="job-company">University of Abuja Teaching Hospital</div>
+                    <div class="job-location">Nigeria</div>
+                </div>
+                <div class="job-dates">March 2022 &ndash; March 2023</div>
+            </div>
+            <ul>
+                <li>Provided first-line medical and emergency care across Internal Medicine, Surgery, Pediatrics, OBGYN</li>
+                <li>Executed CPR, phlebotomy, and first on-call medical officer duties</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Research Assistant</div>
+                    <div class="job-company">Cardiovascular Research Institute (CRI-UATH)</div>
+                    <div class="job-location">Nigeria</div>
+                </div>
+                <div class="job-dates">March 2020 &ndash; March 2022</div>
+            </div>
+            <ul>
+                <li>Collaborated on source documents and CRFs; optimized patient sample collection</li>
+                <li>Assisted in data entry, trial coordination, and scheduling patient visits</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" style="background: #f7fafc;">
+    <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Clinical Trials</h3>
+                <p>Phase II/III trial management, GCP, patient recruitment, psychometric rating, biospecimen handling</p>
+            </div>
+            <div class="skill-card">
+                <h3>Assessment Scales</h3>
+                <p>ADAS-COG, mRS, MoCA, EQ-5D-5L, ADCS-ADL, ADCS-CGIC</p>
+            </div>
+            <div class="skill-card">
+                <h3>Therapeutic Areas</h3>
+                <p>Neurology/CNS (Alzheimer's, Parkinson's, MS, Stroke), Cardiology, Internal Medicine</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data & Software</h3>
+                <p>REDCap, SPSS, EDC systems, Microsoft Office, data quality control</p>
+            </div>
+            <div class="skill-card">
+                <h3>Regulatory</h3>
+                <p>FDA regulations, GCP/ICH guidelines, IRB submissions, IATA</p>
+            </div>
+            <div class="skill-card">
+                <h3>HealthTech</h3>
+                <p>Telemedicine platforms, AI-powered health tools, product strategy, partnerships</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="edu-item">
+            <div>
+                <div class="edu-degree">Bachelor of Medicine, Bachelor of Surgery (MBBS)</div>
+                <div class="edu-school">University of Abuja, Nigeria</div>
+            </div>
+            <div class="edu-year">2010 &ndash; 2021</div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" style="background: #f7fafc;">
+    <div class="container">
+        <h2>Certifications</h2>
+        <div class="cert-list">
+            <span class="cert-badge">Clinical Research Associate (CRA) &mdash; CITI Program, 2024</span>
+            <span class="cert-badge">Good Clinical Practice (GCP) &mdash; NIDA</span>
+            <span class="cert-badge">Advanced Cardiac Life Support (ACLS)</span>
+            <span class="cert-badge">IATA Certification (Biospecimen Shipping)</span>
+            <span class="cert-badge">Medical Practice License &mdash; Nigeria (#100656)</span>
+            <span class="cert-badge">TESOL Certificate &mdash; 2023</span>
+        </div>
+    </div>
+</section>
+
+<!-- Publications -->
+<section id="publications">
+    <div class="container">
+        <h2>Publications</h2>
+        <ul class="pub-list">
+            <li>Olemgbe, G.C. (2014). <em>The Role of Standards in Promoting Sustainable Development in Africa.</em> ARSO Publishing House.</li>
+            <li>Olemgbe, G.C. (2015). <em>The Myth Titled "Unemployment".</em> CreateSpace.</li>
+            <li>Olemgbe, G.C. (2016). <em>Power Up Your Grade Quickly.</em> CreateSpace.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Awards -->
+<section id="awards" style="background: #f7fafc;">
+    <div class="container">
+        <h2>Awards & Affiliations</h2>
+        <ul style="list-style: none; line-height: 2;">
+            <li>&#10003; Associate Fellow &mdash; Royal Commonwealth Commission (2015)</li>
+            <li>&#10003; ARSO 1st Continental Essay Competition Award runner-up (2014)</li>
+            <li>&#10003; Agbami Medical Scholarship Award (2012)</li>
+            <li>&#10003; Member, Nigeria Medical Association (2021 &ndash; present)</li>
+            <li>&#10003; Fellow, Royal Commonwealth Commission (2015 &ndash; present)</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container" style="text-align: center;">
+        <h2>Contact</h2>
+        <p style="margin-bottom: 0.5rem;">Dayton, Ohio, United States</p>
+        <div class="contact-links">
+            <a href="mailto:gcolemgbe@gmail.com" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+            </a>
+            <a href="https://www.linkedin.com/in/godswill-olemgbe-c" target="_blank" rel="noopener" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                LinkedIn
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Godswill Olemgbe. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
